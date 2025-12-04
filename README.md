@@ -38,11 +38,6 @@ mvn spring-boot:run
 
 Backend будет доступен по адресу: `http://localhost:8080`
 
-**Frontend:**
-
-```bash
-
-
 Собранные файлы будут автоматически скопированы в `src/main/resources/static` и будут раздаваться через Spring Boot.
 
 ## Структура проекта
