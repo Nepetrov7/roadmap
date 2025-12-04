@@ -20,53 +20,6 @@ Authorization: Bearer <token>
 
 ## Эндпоинты
 
-### 1. Регистрация
-
-**POST** `/api/auth/register`
-
-**Тело запроса:**
-
-```json
-{
-    "firstName": "Иван",
-    "lastName": "Иванов",
-    "middleName": "Иванович",
-    "username": "ivanov",
-    "password": "password123"
-}
-```
-
-**Ответ:**
-
-```json
-{
-    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
-    "username": "ivanov",
-    "userId": 1
-}
-```
-
-### 2. Авторизация
-
-**POST** `/api/auth/login`
-
-**Тело запроса:**
-
-```json
-{
-    "username": "ivanov",
-    "password": "password123"
-}
-```
-
-**Ответ:**
-
-```json
-{
-    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
-    "username": "ivanov",
-    "userId": 1
-}
 ```
 
 ### 3. Получить профиль пользователя
@@ -89,8 +42,7 @@ Authorization: Bearer <token>
     "middleName": "Иванович",
     "username": "ivanov",
     "countryOfArrival": "Узбекистан",
-    "arrivalDate": "2024-01-15",
-    "isProfileComplete": true
+    "arrivalDate": "2024-01-15"
 }
 ```
 
@@ -123,8 +75,7 @@ Authorization: Bearer <token>
     "middleName": "Иванович",
     "username": "ivanov",
     "countryOfArrival": "Узбекистан",
-    "arrivalDate": "2024-01-15",
-    "isProfileComplete": true
+    "arrivalDate": "2024-01-15"
 }
 ```
 
