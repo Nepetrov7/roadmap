@@ -37,5 +37,13 @@ public class User {
 
     @Column(name = "arrival_date")
     private LocalDate arrivalDate;
+
+    @OneToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "russian_language_certificate_id")
+    private RussianLanguageCertificate russianLanguageCertificate;
+
+    @OneToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "work_patent_id")
+    private WorkPatent workPatent;
 }
 

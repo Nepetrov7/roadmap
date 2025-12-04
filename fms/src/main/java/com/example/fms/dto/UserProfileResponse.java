@@ -17,6 +17,9 @@ public class UserProfileResponse {
     private String username;
     private String countryOfArrival;
     private LocalDate arrivalDate;
+    private Boolean hasRussianLanguageCertificate;
+    private Boolean hasWorkPatent;
+    private Boolean hasPaidStateDuty;
     private Boolean isProfileComplete;
 }
 
