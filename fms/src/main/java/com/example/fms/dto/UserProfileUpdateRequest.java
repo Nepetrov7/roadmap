@@ -26,4 +26,8 @@ public class UserProfileUpdateRequest {
 
   @NotNull(message = "Дата прибытия обязательна")
   private LocalDate arrivalDate;
+
+  private Boolean hasRussianLanguageCertificate;
+  private Boolean hasWorkPatent;
+  private Boolean hasPaidStateDuty;
 }
