@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { Profile } from './components/Profile/Profile';
+import { Roadmap } from './components/Roadmap/Roadmap';
 import './App.scss';
 
 const App: React.FC = () => {

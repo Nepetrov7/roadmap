@@ -6,7 +6,7 @@ import styles from './Profile.module.scss';
 
 export const Profile: React.FC = () => {
   const navigate = useNavigate();
-  const [profile, setProfile] = useState<UserProfileResponse | null>(null);
+  const [_, setProfile] = useState<UserProfileResponse | null>(null);
   const [loading, setLoading] = useState<boolean>(true);
   const [saving, setSaving] = useState<boolean>(false);
   const [error, setError] = useState<string>('');
@@ -55,7 +55,9 @@ export const Profile: React.FC = () => {
     setError('');
   };
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>): Promise<void> => {
+  const handleSubmit = async (
+    e: React.FormEvent<HTMLFormElement>
+  ): Promise<void> => {
     e.preventDefault();
     setError('');
     setSaving(true);
@@ -230,4 +232,3 @@ export const Profile: React.FC = () => {
     </div>
   );
 };
-
