@@ -22,3 +22,16 @@ export interface UserProfileUpdateRequest {
   hasWorkPatent: boolean;
   hasPaidStateDuty: boolean;
 }
+
+export interface RoadmapItemDto {
+  id: number;
+  name: string;
+  chapter: string;
+  orderInChapter: number;
+}
+
+export interface RoadmapResponse {
+  roadmapByChapter: Record<string, RoadmapItemDto[]>;
+  isProfileComplete: boolean;
+  message: string;
+}
